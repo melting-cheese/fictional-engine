@@ -1,0 +1,292 @@
+body{
+	margin : 0;
+	padding : 0;
+	font-family:Arial;
+}
+
+.test{
+	width:460px; margin:0 auto;
+}
+.button{
+	background-color:#3498db;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:0px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:100%;
+	height:50px;
+	text-decoration:none;
+	outline:none;
+	box-shadow: 0px 5px #2980b9;
+	margin-bottom:15px;
+}
+.button:hover {
+	background-color:#9b59b6;
+	box-shadow: 0px 5px #8e44ad;
+}
+.button:active {
+	position:relative;
+	top:5px;
+}
+
+.button2{
+	background-color:#a4b0be;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:0px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	width:100%;
+	height:50px;
+	text-decoration:none;
+	outline:none;
+	box-shadow: 0px 5px #747d8c;
+	margin-bottom:15px;
+}
+.button2:hover {
+	background-color:#57606f;
+	box-shadow: 0px 5px #2f3542;
+}
+.button2:active {
+	position:relative;
+	top:5px;
+}
+.point{
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+.point th{
+	border: 1px solid #000;
+}
+.p_0{
+	text-align : center;
+	vertical-align : middle;
+	width:64px;
+	height:35px;
+}
+
+.p_1, .p_2, .p_3, .p_4, .p_5, .p_6{
+	text-align : center;
+	vertical-align : middle;
+	width:64px;
+	height:35px;
+}
+
+input[type="radio" i]{
+	margin:0;
+}
+
+.p_0{
+	background : rgba(240,80,80,.5);
+}
+.p_1{
+	background : rgba(240,130,80,.5);
+}
+.p_2{
+	background : rgba(240,190,80,.5);
+}
+.p_3{
+	background : rgba(240,240,80,.5);
+}
+.p_4{
+	background : rgba(190,240,80,.5);
+}
+.p_5{
+	background : rgba(130,240,80,.5);
+}
+.p_6{
+	background : rgba(80,240,80,.5);
+}
+
+.question-text{
+	color:#000;
+	padding:15px;
+}
+.q_box1 {
+
+	background-color:rgba(255,255,255,1);
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top:10px;
+	margin-bottom:25px;
+	box-shadow: 0px 5px #7f8c8d;
+}
+.q_box{
+
+	background-color:rgba(255,255,255,1);
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	margin-bottom:25px;
+	box-shadow: 0px 5px #7f8c8d;
+}
+.answer{
+	height:60px;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	overflow: auto;
+}
+
+ul li{
+	color: #bdc3c7;
+	display: block;
+	position: relative;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left:21px;
+}
+
+ul li input[type=radio]{
+	position: absolute;
+	visibility: hidden;
+}
+
+ul li label{
+	display: block;
+	position: relative;
+	font-weight: 300;
+	font-size: 1.35em;
+	padding: 0px;
+	margin:0px;
+	width:35px;
+	height: 35px;
+	top: 10px;
+	left: 10px;
+	z-index: 9;
+	cursor: pointer;
+	-webkit-transition: all 0.25s linear;
+}
+
+ul li:hover label{
+	color: #FFFFFF;
+}
+.check1{
+	margin-right:10px;
+}
+ul li .check1,ul li .check2,ul li .check3,ul li .check4,ul li .check5,ul li .check6,ul li .check7{
+	display: block;
+	position: absolute;
+	border: 5px solid #bdc3c7;
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+ul li:hover .check1 {
+	border: 5px solid #e74c3c ;
+}
+
+ul li:hover .check2 {
+	border: 5px solid #e67e22 ;
+}
+
+ul li:hover .check3 {
+	border: 5px solid #f1c40f;
+}
+
+ul li:hover .check4 {
+	border: 5px solid #1abc9c;
+}
+
+ul li:hover .check5 {
+	border: 5px solid #2ecc71;
+}
+
+ul li:hover .check6 {
+	border: 5px solid #3498db;
+}
+
+ul li:hover .check7 {
+	border: 5px solid #9b59b6;
+}
+
+ul li .check1::before, ul li .check2::before, ul li .check3::before, ul li .check4::before, ul li .check5::before, ul li .check6::before, ul li .check7::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	top: 5px;
+	left: 5px;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check1 {
+	border: 5px solid #e74c3c;
+}
+
+input[type=radio]:checked ~ .check1::before{
+	background: #e74c3c;
+}
+
+input[type=radio]:checked ~ .check2 {
+	border: 5px solid #e67e22;
+}
+
+input[type=radio]:checked ~ .check2::before{
+	background: #e67e22;
+}
+
+input[type=radio]:checked ~ .check3 {
+	border: 5px solid #f1c40f;
+}
+
+input[type=radio]:checked ~ .check3::before{
+	background: #f1c40f;
+}
+
+input[type=radio]:checked ~ .check4 {
+	border: 5px solid #1abc9c;
+}
+
+input[type=radio]:checked ~ .check4::before{
+	background: #1abc9c;
+}
+
+input[type=radio]:checked ~ .check5 {
+	border: 5px solid #2ecc71;
+}
+
+input[type=radio]:checked ~ .check5::before{
+	background: #2ecc71;
+}
+
+input[type=radio]:checked ~ .check6 {
+	border: 5px solid #3498db;
+}
+
+input[type=radio]:checked ~ .check6::before{
+	background: #3498db;
+}
+
+input[type=radio]:checked ~ .check7 {
+	border: 5px solid #9b59b6;
+}
+
+input[type=radio]:checked ~ .check7::before{
+	background: #9b59b6;
+}

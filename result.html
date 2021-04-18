@@ -1,0 +1,553 @@
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=460, initial-scale=0.82, user-scalable=no">
+	<title>BDSM TEST</title>
+	<link href="./css/style2.css" rel="stylesheet">
+	<link href="./css/star.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script data-ad-client="ca-pub-1568162729922188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body style="background:#2c3e50;">
+	<div id="black" style="width:100%; height:100%; display:block; postion:fixed; z-index:1000; background:#2c3e50;"></div>
+	<form style="width:460px; margin:0 auto;">
+		<div style="font-size:25px;text-align:center;color:#95a5a6; text-shadow: 0px 1px 0px #7f8c8d; margin-top:15px; margin-bottom:20px;"><b>테스트 결과</b></div>
+		<div id="title" style="font-size:20px;text-align:center;color:#ecf0f1; text-shadow: 0px 1px 0px #bdc3c7;"></div>
+		<br>
+		<div class="q_box"><div id="script" style="font-size:14px;text-align:center;" class="question-text"></div></div>
+		<br>
+		<div class="q_box" style="font-size:14px;text-align:center;padding:15px;">
+			<div id="point_title" style="font-size:16px;text-align:center;color:#2c3e50; padding-top:10px; padding-bottom:10px;"><b>결과 요약 (<script language="JavaScript">
+			var today = new Date(); document.write(today.getFullYear() ,"년 ",today.getMonth()+1,"월 ",today.getDate( ),"일")</script>)</b></div>
+			<hr style="margin-top:10px;border-top: 1px solid #ecf0f1;">
+			<div style="margin-top:15px; color:#2c3e50;text-align:left;font-size:14px;">
+				<div style="width:100%;display:inline-block;text-align: center;"><b>성향 존재의 유무 </b> : <span style="color:#3498db;">양수</span>는 성향이 있음, <span style="color:#e67e22;">음수</span>는 성향이 없음</div><br>
+				<div style="width:100%;display:inline-block;text-align: center;"><b>성향의 강함과 약함 </b>: 수치가 높을수록 <span style="color:#9b59b6;">강함</span>, 낮을수록 <span style="color:#1abc9c;">소프트함</span></div>
+			</div>
+			<hr style="margin-top:20px;border-top: 1px solid #ecf0f1;">
+			<div id="point" style="width:410px;margin:0 auto;"></div>
+			<hr style="margin-top:20px;border-top: 1px solid #ecf0f1;">
+			<div style="margin-top:15px;margin-bottom:10px; color:#2c3e50;">
+				<div style="display:inline-block;text-align: center;position:relative;">이 테스트 결과는 <span style="color:#ff1800;">개발자의 주관적인 생각</span>이 들어가 있습니다.<br><span style="color:#ff1800;">테스트 결과는 참고용</span>으로 사용하시기 바랍니다.</div>
+			</div>
+		</div>
+		<br>
+		<div class="q_box"><div style="font-size:14px;text-align:center;" class="question-text">
+			<div style="font-size:16px;text-align:center;color:#2c3e50; padding-top:10px; padding-bottom:0px;"><b>결과 복사</b></div>
+			<hr style="margin-top:20px;border-top: 1px solid #ecf0f1;">
+			<div style="margin-top:10px;color:#2c3e50;">결과를 텍스트로 복사해서 프로필에 사용할 수 있습니다.</div>
+			<textarea id="result">BDSM 성향 테스트 결과
+
+			</textarea>
+			<div style="text-align:center; margin:10px 0 10px 0;">
+				<button type="button" name="button" class="button" id="nextButton" style="width:200px;">결과 복사</button>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="q_box"><div style="font-size:14px;text-align:center;" class="question-text">
+		<div style="font-size:16px;text-align:center;color:#2c3e50; padding-top:10px; padding-bottom:0px;"><b>결과 평가</b></div>
+		<hr style="margin-top:20px;border-top: 1px solid #ecf0f1;">
+		<div style="margin-top:10px;color:#2c3e50;">테스트 결과를 평가해 주시면 많은 도움이 됩니다.</div>
+		<br>
+		<section id="like" class="rating">
+			<!-- FIFTH HEART -->
+			<input type="radio" id="heart_5" name="like" value="5" />
+			<label for="heart_5" title="Five">★</label>
+			<!-- FOURTH HEART -->
+			<input type="radio" id="heart_4" name="like" value="4" />
+			<label for="heart_4" title="Four">★</label>
+			<!-- THIRD HEART -->
+			<input type="radio" id="heart_3" name="like" value="3" />
+			<label for="heart_3" title="Three">★</label>
+			<!-- SECOND HEART -->
+			<input type="radio" id="heart_2" name="like" value="2" />
+			<label for="heart_2" title="Two">★</label>
+			<!-- FIRST HEART -->
+			<input type="radio" id="heart_1" name="like" value="1" />
+			<label for="heart_1" title="One">★</label>
+		</section>
+		<br>
+		<input type="checkbox" id="test_send" value="1"/>
+		<label for="test_send" style="color:#2c3e50;">테스트 결과 수집 동의</label>
+		<div style="text-align:center; margin:10px 0 10px 0;">
+			<button type="button" name="button" class="button" id="sendButton" style="width:200px;">평가 제출</button>
+		</div>
+	</div>
+</div>
+<div style="color:#fff; text-align:center; width:100%;">COPYRIGHT AT BDSM-TEST.INFO ALLRIGHT RESERVED.</div>
+<br>
+</form>
+<form name = "save_form" method = POST>
+
+	<input type = "hidden" id = "save_data" name = "save_data" value="">
+
+</form>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#nextButton").click(function(){
+		$("textarea").select();
+		document.execCommand('copy');
+		alert('결과가 복사되었습니다.');
+	});
+	var flag = 0;
+	$("#sendButton").click(function(){
+		var star_check = $('input:radio[name=like]').is(':checked');
+
+		if(flag == 0 && star_check == 0){
+			alert('평가에 체크해주세요.');
+		}
+		else if(flag == 0 && star_check == 1){
+			flag = 1;
+			alert('결과 평가에 감사드립니다.');
+		}
+		else if(flag == 1){
+			alert('이미 결과를 평가해 주셨습니다.');
+		}
+	});
+	function getParameterByName(name) {
+		name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		results = regex.exec(location.search);
+		return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+	var ver = getParameterByName('ver');
+	var gender = getParameterByName('gender');
+	var age = getParameterByName('age');
+	var sexual = getParameterByName('sexual');
+
+	var total_MT=getParameterByName('MT');
+	var total_HU=getParameterByName('HU');
+	var total_BT=getParameterByName('BT');
+	var total_OW=getParameterByName('OW');
+	var total_DM=getParameterByName('DM');
+	var total_SA=getParameterByName('SA');
+	var total_SP=getParameterByName('SP');
+	var total_DG=getParameterByName('DG');
+	var total_RI=getParameterByName('RI');
+	var total_DO=getParameterByName('DO');
+	var total_SL=getParameterByName('SL');
+	var total_PR=getParameterByName('PR');
+	var total_BR=getParameterByName('BR');
+	var total_PE=getParameterByName('PE');
+	var total_LI=getParameterByName('LI');
+	var total_MA=getParameterByName('MA');
+	var total_SK=getParameterByName('SK');
+	var total_DE=getParameterByName('DE');
+	var total_RB=getParameterByName('RB');
+	var total_SU=getParameterByName('SU');
+	var total_SW=getParameterByName('SW');
+	var total_VA=getParameterByName('VA');
+
+	total_MT = Number(total_MT)+1;
+	total_HU = Number(total_HU)+1;
+	total_BT = Number(total_BT)+1;
+	total_OW = Number(total_OW)+1;
+	total_DM = Number(total_DM)+1;
+	total_SA = Number(total_SA)+1;
+	total_SP = Number(total_SP)+1;
+	total_DG = Number(total_DG)+1;
+	total_RI = Number(total_RI)+1;
+	total_DO = Number(total_DO)+1;
+	total_SL = Number(total_SL)+1;
+	total_PR = Number(total_PR)+1;
+	total_BR = Number(total_BR)+1;
+	total_PE = Number(total_PE)+1;
+	total_LI = Number(total_LI)+1;
+	total_MA = Number(total_MA)+1;
+	total_SK = Number(total_SK)+1;
+	total_DE = Number(total_DE)+1;
+	total_RB = Number(total_RB)+1;
+	total_SU = Number(total_SU)+1;
+	total_SW = Number(total_SW)+1;
+	total_VA = Number(total_VA)+1;
+
+	var result_point = [
+		{"name":"마스터/미스트레스", "count": total_MT, "tag":"mt"},
+		{"name":"헌터", "count": total_HU, "tag":"hu"},
+		{"name":"브랫 테이머", "count": total_BT, "tag":"bt"},
+		{"name":"오너", "count": total_OW, "tag":"ow"},
+		{"name":"대디/마미", "count": total_DM, "tag":"dm"},
+		{"name":"사디스트", "count": total_SA, "tag":"sa"},
+		{"name":"스팽커", "count": total_SP, "tag":"sp"},
+		{"name":"디그레이더", "count": total_DG, "tag":"dg"},
+		{"name":"리거", "count": total_RI, "tag":"ri"},
+		{"name":"도미넌트", "count": total_DO, "tag":"dom"},
+		{"name":"슬레이브", "count": total_SL, "tag":"sl"},
+		{"name":"프레이", "count": total_PR, "tag":"pr"},
+		{"name":"브랫", "count": total_BR, "tag":"br"},
+		{"name":"펫", "count": total_PE, "tag":"pe"},
+		{"name":"리틀", "count": total_LI, "tag":"li"},
+		{"name":"마조히스트", "count": total_MA, "tag":"ma"},
+		{"name":"스팽키", "count": total_SK, "tag":"sk"},
+		{"name":"디그레이디", "count": total_DE, "tag":"de"},
+		{"name":"로프버니", "count": total_RB, "tag":"rb"},
+		{"name":"서브미시브", "count": total_SU, "tag":"su"},
+		{"name":"스위치", "count": total_SW, "tag":"sw"},
+		{"name":"바닐라", "count": total_VA, "tag":"va"}
+	];
+
+	function isNumber(obj) {
+		return obj !== undefined && typeof(obj) === 'number' && !isNaN(obj);
+	}
+
+	function filterByID(bar) {
+		if (isNumber(bar.count) && bar.count !== 0) {
+			return true;
+		}
+	}
+
+	var arrByID = result_point.filter(filterByID);
+
+	arrByID.sort(function(b, a){return a.count-b.count});
+
+	document.getElementById('save_data').value += '<table>';
+	document.getElementById('save_data').value += '<tr>';
+	document.getElementById('save_data').value += '<td>';
+	document.getElementById('save_data').value += today.getFullYear()+'-';
+	document.getElementById('save_data').value += today.getMonth()+1+'-';
+	document.getElementById('save_data').value += today.getDate();
+	document.getElementById('save_data').value += '</td>';
+
+	document.getElementById('save_data').value += '<td>'+gender+'</td>';
+	document.getElementById('save_data').value += '<td>'+age+'</td>';
+	document.getElementById('save_data').value += '<td>'+sexual+'</td>';
+	for(var i=0;i<result_point.length;i++){ //배열 출력
+		document.getElementById('save_data').value += '<td class="'+result_point[i].tag+'">'+Math.round((result_point[i].count-1)*8.333)+'%</td>';
+	}
+	document.getElementById('save_data').value += '</tr></table>';
+
+
+	for(var i=0;i<arrByID.length;i++){ //배열 출력
+		document.getElementById('point').innerHTML += '<div class="percent" style="line-height:21px; margin-right:15px"><div style="float:left; width:50px; line-height:21px; text-align:left;"">'+Math.round((arrByID[i].count-1)*8.333)+'%</div><div class="graph" style="width:'+((Math.abs(Math.round((arrByID[i].count-1)*8.333))/2)+3)+'px; background-color:#fff;">'+Math.round((arrByID[i].count-1)*8.333)+'</div><div id="'+arrByID[i].tag+'" style="color:#999; height:21px; line-height:21px; text-glign:right;width:61px; float:right;cursor:pointer;">성향 해설</div><div style="float:right; width:120px;margin-right:15px; ">'+arrByID[i].name+'</div></div><div id="'+arrByID[i].tag+'_box" style="display: none; margin:10px 0 10px 0; font-size:14px;text-align:center;color:#000;background:#ecf0f1;border:1px solid rgba(180,180,180,.5); border-radius:15px;padding:15px;">준비중</div>';
+		document.getElementById('result').innerHTML += arrByID[i].name+' : '+Math.round((arrByID[i].count-1)*8.333)+'%\n';
+	}
+
+	$("#mt").click( function() {
+		$("#mt_box").fadeToggle();
+	});
+	$("#hu").click( function() {
+		$("#hu_box").fadeToggle();
+	});
+	$("#bt").click( function() {
+		$("#bt_box").fadeToggle();
+	});
+	$("#ow").click( function() {
+		$("#ow_box").fadeToggle();
+	});
+	$("#dm").click( function() {
+		$("#dm_box").fadeToggle();
+	});
+	$("#sa").click( function() {
+		$("#sa_box").fadeToggle();
+	});
+	$("#sp").click( function() {
+		$("#sp_box").fadeToggle();
+	});
+	$("#dg").click( function() {
+		$("#dg_box").fadeToggle();
+	});
+	$("#ri").click( function() {
+		$("#ri_box").fadeToggle();
+	});
+	$("#dom").click( function() {
+		$("#dom_box").fadeToggle();
+	});
+	$("#sl").click( function() {
+		$("#sl_box").fadeToggle();
+	});
+	$("#pr").click( function() {
+		$("#pr_box").fadeToggle();
+	});
+	$("#br").click( function() {
+		$("#br_box").fadeToggle();
+	});
+	$("#pe").click( function() {
+		$("#pe_box").fadeToggle();
+	});
+	$("#li").click( function() {
+		$("#li_box").fadeToggle();
+	});
+	$("#ma").click( function() {
+		$("#ma_box").fadeToggle();
+	});
+	$("#sk").click( function() {
+		$("#sk_box").fadeToggle();
+	});
+	$("#de").click( function() {
+		$("#de_box").fadeToggle();
+	});
+	$("#rb").click( function() {
+		$("#rb_box").fadeToggle();
+	});
+	$("#su").click( function() {
+		$("#su_box").fadeToggle();
+	});
+	$("#sw").click( function() {
+		$("#sw_box").fadeToggle();
+	});
+	$("#va").click( function() {
+		$("#va_box").fadeToggle();
+	});
+
+
+
+	$('.percent').css('color', function(){
+		var percentage = parseInt($(this).text(), 10);
+		if (percentage < -120) {
+			return '#EA2027'
+		}
+		else if (percentage >= -120 && percentage <= -80) {
+			return '#EE5A24'
+		}
+		else if (percentage >= -80 && percentage <= -40) {
+			return '#F79F1F'
+		}
+		else if (percentage >= -40 && percentage <= 0) {
+			return '#FFC312'
+		}
+		else if (percentage > 0 && percentage <= 40) {
+			return '#16a085';
+		}
+		else if (percentage > 40 && percentage <= 80) {
+			return '#27ae60';
+		}
+		else if (percentage > 80 && percentage <= 120) {
+			return '#2980b9';
+		}
+		else if (percentage > 120) {
+			return '#8e44ad';
+		}
+	});
+
+	$('.graph').css('background-color', function(){
+		var graph = parseInt($(this).text(), 10);
+		if (graph < -120) {
+			return '#EA2027'
+		}
+		else if (graph >= -120 && graph <= -80) {
+			return '#EE5A24'
+		}
+		else if (graph >= -80 && graph <= -40) {
+			return '#F79F1F'
+		}
+		else if (graph >= -40 && graph <= 0) {
+			return '#FFC312'
+		}
+		else if (graph > 0 && graph <= 40) {
+			return '#16a085';
+		}
+		else if (graph > 40 && graph <= 80) {
+			return '#27ae60';
+		}
+		else if (graph > 80 && graph <= 120) {
+			return '#2980b9';
+		}
+		else if (graph > 120) {
+			return '#8e44ad';
+		}
+	});
+
+	$('.graph').css('margin-left', function(){
+		var graph = parseInt($(this).text(), 10);
+		if (graph > 0){
+			$(this).css('left', 69.06);
+		}
+		if (graph > 0){
+			$(this).css('left', 63.06);
+		}
+		else{
+			$(this).css('left', 63.06+((graph)/2));
+		}
+	});
+
+	if(getParameterByName('MT') != 'null'){
+		document.getElementById('mt_box').innerHTML = '	<b>마스터/미스트레스</b><br><br>마스터/미스트레스 성향은<br>상대방에게 존경받기를 바라고 <br>그러기 위해서 노력하는 성향입니다.<br><br>그들은 상대방의 정신과 육체를<br>완전히 통제하고 지배할 수 있는<br>자격을 가지고 싶어 합니다.<br><br>그들은 상대방이<br>더 나은 사람이 될 수 있도록<br>이끌어 주기 위해서 노력합니다.	';
+		document.getElementById('hu_box').innerHTML = '	<b>헌터</b><br><br>헌터 성향은 상대방을 육체적으로<br>완벽하게 제압하고 싶어하는 성향입니다.<br><br>그들은상대방에게 명령을 하지도 않고<br>상대방이 순종하기를 바라지도 않습니다.<br><br>상대방을 제압하는 과정에서<br>상대방이 저항하고 반항하는 모습에 <br>더 흥분하기도 하며,<br>상대방이 본인을 깨물고 할퀴며 밀어내도 <br> 보통 전혀 신경 쓰지 않습니다.<br><br>그들은 강한 힘으로 상대를 제압하는<br>그 과정을 즐기기 때문입니다.	';
+		document.getElementById('bt_box').innerHTML = '	<b>브랫 테이머</b><br><br>브랫 테이머 성향은<br>순종하는 대상에게 흥미를 느끼지 못하며,<br>반항하고 저항하는 상대방을 <br>강제로 굴복시키는 것에<br>흥미를 느끼는 성향입니다.<br><br>그들은 정해진 선 안에서<br>상대방이 자유롭게 <br>장난치고 반항하도록 허락하고,<br>상대방의 버릇없는 모습을 보며<br>어떻게 괴롭힐지 궁리합니다.<br><br>언제나 상냥하고 <br>다정한 모습인 것 만 같은 그들은<br>선을 넘은 상대방의 장난에<br>180도 돌변합니다.	';
+		document.getElementById('ow_box').innerHTML = '	<b>오너</b><br><br>오너 성향은 <br>강한 유대감과 교감을 통해서<br>상대방을 소유하고 싶어 합니다.<br><br>그들은 소유욕이 무척 강하며<br>상대방이 본인이 아닌 다른 무엇인가에<br>관심을 가지는 걸 싫어합니다.<br><br>그들은 때때로 육체적인 부분에서<br>상대방을 따끔하게 훈육하기도 하지만,<br>그 안에는 애정과 관심이 담겨있습니다.	';
+		document.getElementById('dm_box').innerHTML = '	<b>대디/마미</b><br><br>대디/마미 성향은<br>상대방을 보살피고 싶어 하는 성향입니다.<br><br>그들은 각자의 방식대로 <br>상대방을 관심과 애정으로 <br>부드럽게 보살핍니다.<br><br>그들은 상대방이 자신에게 <br>의지하기를 원합니다.<br><br>그들의 지배 수단은 대부분<br>대화와 부탁으로 이루어져 있지만<br>상대에 따라서는 <br>그 어떤 방법보다 강력합니다.	';
+		document.getElementById('sa_box').innerHTML = '	<b>사디스트</b><br><br>사디스트 성향은<br>상대방에게 가학 행위를 통해<br>고통을 주는 것을 즐기는 성향입니다.<br><br>넓은 의미에서 정신적인 가학까지<br>포함하기도 합니다.<br><br>그들은 상대방이 <br>고통스러워하는 모습이나 <br>두려워하는 모습을 보면서 더 흥분하며, <br><br>그러한 모습을 보기 위해서<br>여러 도구나 수단을 선택합니다.	';
+		document.getElementById('sp_box').innerHTML = '	<b>스팽커</b><br><br>스팽커 성향은<br>상대방을 찰싹 때리는 행위에<br>흥분하는 성향입니다.<br><br>그들은 나름대로의 기준을 정하고<br>상대방의 신체 부위(특히 엉덩이)에<br>찰싹 소리가 나도록<br>때리는 행위를 반복합니다.<br><br>그들은 특히 때릴 때 나는 소리와 <br>상대방의 반응이나 비명<br>그리고 어떠한 모양으로 자국이 났는지를<br>중요하게 생각합니다.<br><br>스팽커가 원하는 스팽의 강도와<br>좋아하는 도구는 개인마다 <br>각기 다 다르게 나타납니다.	';
+		document.getElementById('dg_box').innerHTML = '	<b>디그레이더</b><br><br>디그레이더 성향은 <br>상대방이 수치스러워하거나<br>부끄러워하는 것을 보며 흥분하는 성향입니다.<br><br>상대방을 수치스러운 상황이나 환경에 노출시키거나,<br>음란하고 저속한 말과 행동을 하는 것<br>자체를 즐기기도 합니다.<br><br>그들은 각자 음담패설이나 욕설과 같은 <br>자신만의 수단을 가지고 있으며<br><br>다양한 형태로 나타날 수 있습니다.	';
+		document.getElementById('ri_box').innerHTML = '	<b>리거</b><br><br>리거 성향은<br>상대방을 로프나 수갑, 옷 등을 통해서<br>움직이지 못하도록 육체적으로 구속하는 것을<br>즐기는 성향입니다.<br><br>그들은 더 아름답고 예쁜 모양으로 상대방을<br>묶는 것과 동시에 상대방이 움직일 수 없도록<br>속박하는 예술가입니다.	';
+		document.getElementById('dom_box').innerHTML = '	<b>도미넌트</b><br><br>도미넌트 성향은<br>상대방에게 명령하고 <br>지시하는 것을 즐기는 성향입니다.<br><br>도미넌트들은 취향에 따라<br>상대방이 완벽하게 순종하기를 바라는 사람부터<br>거친 반항을 해 주길 바라는 사람까지 존재하지만<br><br>그들의 목적은 여러 가지 수단과 방법을 통해서<br>상대방을 자신의 의지대로 지배하는 일입니다.<br><br>도미넌트가 상대방을 지배하는 방법은<br>개인마다 각기 다 다르게 나타납니다.	';
+	}
+	else{
+	}
+
+	if(getParameterByName('SL') != 'null'){
+		document.getElementById('sl_box').innerHTML = '	<b>슬레이브</b><br><br>슬레이브 성향은<br>존경하는 상대방에게<br>자신의 모든 의사 결정권을 맡기고<br>싶어 하는 성향입니다.<br><br>그들은 존경하는 상대방을 모시면서<br>상대방이 자신의 정신과 육체를<br>완전히 통제하고<br>지배해 주기를 바랍니다.<br><br>그들은 존경하는 상대방을 통해서<br>배우고 완전해지며<br>더 나은 사람이 되는 기분을 느낍니다.	';
+		document.getElementById('pr_box').innerHTML = '	<b>프레이</b><br><br>프레이 성향은 거칠게 반항하고<br>저항하는 자신을 상대방이 무참하게<br>제압해 주기를 바라는 성향입니다.<br><br>그들은 명령을 받는 것이나<br>순종하는 것에는 전혀 관심이 없습니다.<br><br>그들은 자신을 지배하려는 상대방에게<br>소리를 지르며 때리고 깨물기도 하지만,<br>정말로 상대방이 멈추길 바라는 것이 아니라<br>자신을 제압하려고 하는 상대방을<br>있는 힘 것 밀어내고 저항하는 과정에서<br>흥분과 쾌감을 느끼기 때문입니다.	';
+		document.getElementById('br_box').innerHTML = '	<b>브랫</b><br><br>브랫 성향은 이유 없이 순종하지 않으며,<br>상대방이 자신을 강제로<br>굴복시켜 주기를 바라는 성향입니다.<br><br>그들은 상대방을 곤란하게 만드는<br>장난이나 말썽을 부리기도 하고,<br>상대방의 부탁이나 지시에 따르지 않고<br>반항하며 저항합니다.<br><br>그들은 상대방이 자신의 버릇없는 모습에<br>화를 내거나 돌변하는 모습이 보고 싶어합니다.<br><br>그들은 순종 하는 것 보다 <br>굴복하는 것이 더 짜릿하다고 생각합니다.	';
+		document.getElementById('pe_box').innerHTML = '	<b>펫</b><br><br>펫 성향은 상대방과 강한 유대감을 가지며<br>상대방에게 소유되고 싶어 합니다.<br><br>그들은 상대방에게 소속되고자 하는<br>욕구가 무척 강하며<br>상대방이 본인이 아닌 다른 무엇인가에<br>관심을 가지는 걸 싫어합니다.<br><br>그들은 자신이 어떠한 행동을 할 때<br>상대방을 기쁘게 하는지 눈치를 살피며<br>끝없이 상대방에게 애정과 관심을 갈구합니다.	';
+		document.getElementById('li_box').innerHTML = '	<b>리틀</b><br><br>리틀 성향은 상대방에게<br>보살핌을 받고 싶어 하는 성향입니다.<br><br>그들은 상대방에게 의지할 때<br>가장 안정감을 느낍니다.<br><br>그들은 상대방의 관심을 끌기 위해서<br>때때로 말썽과 투정을 부리며<br>때를 쓰기도 합니다.<br><br>이러한 행동은 혼나고 싶어서<br>그런 것이 절대 아니고,<br>그저 한번 더 안아주기를 바라는 것입니다.	';
+		document.getElementById('ma_box').innerHTML = '	<b>마조히스트</b><br><br>마조히스트 성향은<br>상대방에게 피학 당하면서 느껴지는<br>고통을 통해서 쾌락을 느끼는 성향입니다.<br><br>넓은 의미로 정신적인 피학까지<br>포함하기도 합니다.<br><br>그들은 고통을 짜릿하다고 생각하며<br>그 고통으로 인해 발생한 상처나<br>아픔을 즐깁니다.	';
+		document.getElementById('sk_box').innerHTML = '	<b>스팽키</b><br><br>스팽키 성향은<br>상대방이 내 몸을 찰싹 때리는 것에<br>성적인 흥분을 느끼 성향입니다.<br><br>그들은 본인의 신체 부위(특히 엉덩이)에<br>찰싹 소리가 나도록 맞으면서<br>흥분과 쾌감을 느낍니다.<br><br>그들은 특히 맞을 때 나는 소리와<br>고통이 주는 쾌감<br>그리고 어떠한 모양으로 자국이 났는지<br>중요하게 생각합니다.<br><br>스팽키가 원하는 스팽의 강도와<br>좋아하는 도구는 개인마다<br>각기 다 다르게 나타납니다.	';
+		document.getElementById('de_box').innerHTML = '	<b>디그레이디</b><br><br>디그레이디 성향은<br>상대방에게 자신의 수치스럽고<br>부끄러운 모습을 보여주면서 흥분하는 성향입니다.<br><br>그들은 수치스러운 상황이나 환경에 노출되거나,<br>음란하고 저속한 말과 행동에 당하는 것을<br>즐기기도 합니다.<br><br>그들은 보통 음담패설이나<br>수치스러운 호칭으로 불리는 것을 좋아하지만<br><br>그 외에도 다양한 형태로 나타날 수 있습니다.	';
+		document.getElementById('rb_box').innerHTML = '	<b>로프 버니</b><br><br>로프 버니 성향은<br>상대방으로부터 로프나 수갑, 옷 등을 통해서<br>움직이지 못하게 될 때 흥분하는 성향입니다.<br><br>그들은 예쁜 모양으로 묶여서<br>움직이지 못하도록 구속되어 있을 때<br>짜릿한 흥분감에 빠집니다.	';
+		document.getElementById('su_box').innerHTML = '	<b>서브미시브</b><br><br>서브미시브 성향은<br>상대방의 명령과 지시에 따르며<br>복종하는 것에 즐거움을 느끼는 성향입니다.<br><br>서브미시브는 취향에 따라<br>상대방에게 완전히 순종하기를 바라는 사람부터<br>강제로 굴복당하기를 바라는 사람까지 존재하지만<br><br>그들의 공통된 목적은<br>상대방에게 복종하고 통제되어<br>상대방이 원하는 데로 움직이는 것입니다.<br><br>서브미시브의 행동에는<br>복종, 순종, 굴복, 반항과 같은<br>다양한 형태가 있으며<br>개인마다 각기 다 다르게 나타납니다.	';
+	}
+	else{
+	}
+
+	document.getElementById('sw_box').innerHTML = '<b>스위치</b><br><br>스위치 성향은 항상 지배적인 역할을 원하지도<br>또는 항상 복종하는 역할을 원하지도 않는 성향입니다.<br><br>그들은 상황이나 상대에 따라서<br>변화하는 성향을 가지고 있습니다.<br><br>스위치 성향자는 보통 상대방과 역할을 바꿔서<br>성적 만족감을 얻으려 하기도 하지만,<br><br>일부는 다른 파트너를 만나서<br>자신의 성적 만족감을 얻으려 하기도 합니다.	';
+	document.getElementById('va_box').innerHTML = '<b>바닐라</b><br><br>바닐라 성향은 무성향자라고도 부릅니다.<br>그들은 일반적이고 보통의 섹스를 즐깁니다.<br><br>누군가를 지배하거나 누군가에게 복종하지 않으며<br>서로를 배려하고 서로에게 만족감을<br>주기 위해서 노력합니다.	';
+
+	if(arrByID[0].tag == 'mt'){document.getElementById('script').innerHTML = '	<b>마스터/미스트레스</b><br><br>마스터/미스트레스 성향은<br>상대방에게 존경받기를 바라고 <br>그러기 위해서 노력하는 성향입니다.<br><br>그들은 상대방의 정신과 육체를<br>완전히 통제하고 지배할 수 있는<br>자격을 가지고 싶어 합니다.<br><br>그들은 상대방이<br>더 나은 사람이 될 수 있도록<br>이끌어 주기 위해서 노력합니다.	';}
+	if(arrByID[0].tag == 'hu'){document.getElementById('script').innerHTML = '	<b>헌터</b><br><br>헌터 성향은 상대방을 육체적으로<br>완벽하게 제압하고 싶어하는 성향입니다.<br><br>그들은상대방에게 명령을 하지도 않고<br>상대방이 순종하기를 바라지도 않습니다.<br><br>상대방을 제압하는 과정에서<br>상대방이 저항하고 반항하는 모습에 <br>더 흥분하기도 하며,<br>상대방이 본인을 깨물고 할퀴며 밀어내도 <br> 보통 전혀 신경 쓰지 않습니다.<br><br>그들은 강한 힘으로 상대를 제압하는<br>그 과정을 즐기기 때문입니다.	';}
+	if(arrByID[0].tag == 'bt'){document.getElementById('script').innerHTML = '	<b>브랫 테이머</b><br><br>브랫 테이머 성향은<br>순종하는 대상에게 흥미를 느끼지 못하며,<br>반항하고 저항하는 상대방을 <br>강제로 굴복시키는 것에<br>흥미를 느끼는 성향입니다.<br><br>그들은 정해진 선 안에서<br>상대방이 자유롭게 <br>장난치고 반항하도록 허락하고,<br>상대방의 버릇없는 모습을 보며<br>어떻게 괴롭힐지 궁리합니다.<br><br>언제나 상냥하고 <br>다정한 모습인 것 만 같은 그들은<br>선을 넘은 상대방의 장난에<br>180도 돌변합니다.	';}
+	if(arrByID[0].tag == 'ow'){document.getElementById('script').innerHTML = '	<b>오너</b><br><br>오너 성향은 <br>강한 유대감과 교감을 통해서<br>상대방을 소유하고 싶어 합니다.<br><br>그들은 소유욕이 무척 강하며<br>상대방이 본인이 아닌 다른 무엇인가에<br>관심을 가지는 걸 싫어합니다.<br><br>그들은 때때로 육체적인 부분에서<br>상대방을 따끔하게 훈육하기도 하지만,<br>그 안에는 애정과 관심이 담겨있습니다.	';}
+	if(arrByID[0].tag == 'dm'){document.getElementById('script').innerHTML = '	<b>대디/마미</b><br><br>대디/마미 성향은<br>상대방을 보살피고 싶어 하는 성향입니다.<br><br>그들은 각자의 방식대로 <br>상대방을 관심과 애정으로 <br>부드럽게 보살핍니다.<br><br>그들은 상대방이 자신에게 <br>의지하기를 원합니다.<br><br>그들의 지배 수단은 대부분<br>대화와 부탁으로 이루어져 있지만<br>상대에 따라서는 <br>그 어떤 방법보다 강력합니다.	';}
+	if(arrByID[0].tag == 'sa'){document.getElementById('script').innerHTML = '	<b>사디스트</b><br><br>사디스트 성향은<br>상대방에게 가학 행위를 통해<br>고통을 주는 것을 즐기는 성향입니다.<br><br>넓은 의미에서 정신적인 가학까지<br>포함하기도 합니다.<br><br>그들은 상대방이 <br>고통스러워하는 모습이나 <br>두려워하는 모습을 보면서 더 흥분하며, <br><br>그러한 모습을 보기 위해서<br>여러 도구나 수단을 선택합니다.	';}
+	if(arrByID[0].tag == 'sp'){document.getElementById('script').innerHTML = '	<b>스팽커</b><br><br>스팽커 성향은<br>상대방을 찰싹 때리는 행위에<br>흥분하는 성향입니다.<br><br>그들은 나름대로의 기준을 정하고<br>상대방의 신체 부위(특히 엉덩이)에<br>찰싹 소리가 나도록<br>때리는 행위를 반복합니다.<br><br>그들은 특히 때릴 때 나는 소리와 <br>상대방의 반응이나 비명<br>그리고 어떠한 모양으로 자국이 났는지를<br>중요하게 생각합니다.<br><br>스팽커가 원하는 스팽의 강도와<br>좋아하는 도구는 개인마다 <br>각기 다 다르게 나타납니다.	';}
+	if(arrByID[0].tag == 'dg'){document.getElementById('script').innerHTML = '	<b>디그레이더</b><br><br>디그레이더 성향은 <br>상대방이 수치스러워하거나<br>부끄러워하는 것을 보며 흥분하는 성향입니다.<br><br>상대방을 수치스러운 상황이나 환경에 노출시키거나,<br>음란하고 저속한 말과 행동을 하는 것<br>자체를 즐기기도 합니다.<br><br>그들은 각자 음담패설이나 욕설과 같은 <br>자신만의 수단을 가지고 있으며<br><br>다양한 형태로 나타날 수 있습니다.	';}
+	if(arrByID[0].tag == 'ri'){document.getElementById('script').innerHTML = '	<b>리거</b><br><br>리거 성향은<br>상대방을 로프나 수갑, 옷 등을 통해서<br>움직이지 못하도록 육체적으로 구속하는 것을<br>즐기는 성향입니다.<br><br>그들은 더 아름답고 예쁜 모양으로 상대방을<br>묶는 것과 동시에 상대방이 움직일 수 없도록<br>속박하는 예술가입니다.	';}
+	if(arrByID[0].tag == 'dom'){document.getElementById('script').innerHTML = '	<b>도미넌트</b><br><br>도미넌트 성향은<br>상대방에게 명령하고 <br>지시하는 것을 즐기는 성향입니다.<br><br>도미넌트들은 취향에 따라<br>상대방이 완벽하게 순종하기를 바라는 사람부터<br>거친 반항을 해 주길 바라는 사람까지 존재하지만<br><br>그들의 목적은 여러 가지 수단과 방법을 통해서<br>상대방을 자신의 의지대로 지배하는 일입니다.<br><br>도미넌트가 상대방을 지배하는 방법은<br>개인마다 각기 다 다르게 나타납니다.	';}
+	if(arrByID[0].tag == 'sl'){document.getElementById('script').innerHTML = '	<b>슬레이브</b><br><br>슬레이브 성향은<br>존경하는 상대방에게<br>자신의 모든 의사 결정권을 맡기고<br>싶어 하는 성향입니다.<br><br>그들은 존경하는 상대방을 모시면서<br>상대방이 자신의 정신과 육체를<br>완전히 통제하고<br>지배해 주기를 바랍니다.<br><br>그들은 존경하는 상대방을 통해서<br>배우고 완전해지며<br>더 나은 사람이 되는 기분을 느낍니다.	';}
+	if(arrByID[0].tag == 'pr'){document.getElementById('script').innerHTML = '	<b>프레이</b><br><br>프레이 성향은 거칠게 반항하고<br>저항하는 자신을 상대방이 무참하게<br>제압해 주기를 바라는 성향입니다.<br><br>그들은 명령을 받는 것이나<br>순종하는 것에는 전혀 관심이 없습니다.<br><br>그들은 자신을 지배하려는 상대방에게<br>소리를 지르며 때리고 깨물기도 하지만,<br>정말로 상대방이 멈추길 바라는 것이 아니라<br>자신을 제압하려고 하는 상대방을<br>있는 힘 것 밀어내고 저항하는 과정에서<br>흥분과 쾌감을 느끼기 때문입니다.	';}
+	if(arrByID[0].tag == 'br'){document.getElementById('script').innerHTML = '	<b>브랫</b><br><br>브랫 성향은 이유 없이 순종하지 않으며,<br>상대방이 자신을 강제로<br>굴복시켜 주기를 바라는 성향입니다.<br><br>그들은 상대방을 곤란하게 만드는<br>장난이나 말썽을 부리기도 하고,<br>상대방의 부탁이나 지시에 따르지 않고<br>반항하며 저항합니다.<br><br>그들은 상대방이 자신의 버릇없는 모습에<br>화를 내거나 돌변하는 모습이 보고 싶어합니다.<br><br>그들은 순종 하는 것 보다 <br>굴복하는 것에 더 짜릿하다고 생각합니다.	';}
+	if(arrByID[0].tag == 'pe'){document.getElementById('script').innerHTML = '	<b>펫</b><br><br>펫 성향은 상대방과 강한 유대감을 가지며<br>상대방에게 소유되고 싶어 합니다.<br><br>그들은 상대방에게 소속되고자 하는<br>욕구가 무척 강하며<br>상대방이 본인이 아닌 다른 무엇인가에<br>관심을 가지는 걸 싫어합니다.<br><br>그들은 자신이 어떠한 행동을 할 때<br>상대방을 기쁘게 하는지 눈치를 살피며<br>끝없이 상대방에게 애정과 관심을 갈구합니다.	';}
+	if(arrByID[0].tag == 'li'){document.getElementById('script').innerHTML = '	<b>리틀</b><br><br>리틀 성향은 상대방에게<br>보살핌을 받고 싶어 하는 성향입니다.<br><br>그들은 상대방에게 의지할 때<br>가장 안정감을 느낍니다.<br><br>그들은 상대방의 관심을 끌기 위해서<br>때때로 말썽과 투정을 부리며<br>때를 쓰기도 합니다.<br><br>이러한 행동은 혼나고 싶어서<br>그런 것이 절대 아니고,<br>그저 한번 더 안아주기를 바라는 것입니다.	';}
+	if(arrByID[0].tag == 'ma'){document.getElementById('script').innerHTML = '	<b>마조히스트</b><br><br>마조히스트 성향은<br>상대방에게 피학 당하면서 느껴지는<br>고통을 통해서 쾌락을 느끼는 성향입니다.<br><br>넓은 의미로 정신적인 피학까지<br>포함하기도 합니다.<br><br>그들은 고통을 짜릿하다고 생각하며<br>그 고통으로 인해 발생한 상처나<br>아픔을 즐깁니다.	';}
+	if(arrByID[0].tag == 'sk'){document.getElementById('script').innerHTML = '	<b>스팽키</b><br><br>스팽키 성향은<br>상대방이 내 몸을 찰싹 때리는 것에<br>성적인 흥분을 느끼 성향입니다.<br><br>그들은 본인의 신체 부위(특히 엉덩이)에<br>찰싹 소리가 나도록 맞으면서<br>흥분과 쾌감을 느낍니다.<br><br>그들은 특히 맞을 때 나는 소리와<br>고통이 주는 쾌감<br>그리고 어떠한 모양으로 자국이 났는지<br>중요하게 생각합니다.<br><br>스팽키가 원하는 스팽의 강도와<br>좋아하는 도구는 개인마다<br>각기 다 다르게 나타납니다.	';}
+	if(arrByID[0].tag == 'de'){document.getElementById('script').innerHTML = '	<b>디그레이디</b><br><br>디그레이디 성향은<br>상대방에게 자신의 수치스럽고<br>부끄러운 모습을 보여주면서 흥분하는 성향입니다.<br><br>그들은 수치스러운 상황이나 환경에 노출되거나,<br>음란하고 저속한 말과 행동에 당하는 것을<br>즐기기도 합니다.<br><br>그들은 보통 음담패설이나<br>수치스러운 호칭으로 불리는 것을 좋아하지만<br><br>그 외에도 다양한 형태로 나타날 수 있습니다.	';}
+	if(arrByID[0].tag == 'rb'){document.getElementById('script').innerHTML = '	<b>로프 버니</b><br><br>로프 버니 성향은<br>상대방으로부터 로프나 수갑, 옷 등을 통해서<br>움직이지 못하게 될 때 흥분하는 성향입니다.<br><br>그들은 예쁜 모양으로 묶여서<br>움직이지 못하도록 구속되어 있을 때<br>짜릿한 흥분감에 빠집니다.	';}
+	if(arrByID[0].tag == 'su'){document.getElementById('script').innerHTML = '	<b>서브미시브</b><br><br>서브미시브 성향은<br>상대방의 명령과 지시에 따르며<br>복종하는 것에 즐거움을 느끼는 성향입니다.<br><br>서브미시브는 취향에 따라<br>상대방에게 완전히 순종하기를 바라는 사람부터<br>강제로 굴복당하기를 바라는 사람까지 존재하지만<br><br>그들의 공통된 목적은<br>상대방에게 복종하고 통제되어<br>상대방이 원하는 데로 움직이는 것입니다.<br><br>서브미시브의 행동에는<br>복종, 순종, 굴복, 반항과 같은<br>다양한 형태가 있으며<br>개인마다 각기 다 다르게 나타납니다.	';}
+	if(arrByID[0].tag == 'sw'){document.getElementById('script').innerHTML = '	<b>스위치</b><br><br>스위치 성향은 항상 지배적인 역할을 원하지도<br>또는 항상 복종하는 역할을 원하지도 않는 성향입니다.<br><br>그들은 상황이나 상대에 따라서<br>변화하는 성향을 가지고 있습니다.<br><br>스위치 성향자는 보통 상대방과 역할을 바꿔서<br>성적 만족감을 얻으려 하기도 하지만,<br><br>일부는 다른 파트너를 만나서<br>자신의 성적 만족감을 얻으려 하기도 합니다.	';}
+	if(arrByID[0].tag == 'va'){document.getElementById('script').innerHTML = '	<b>바닐라</b><br><br>바닐라 성향은 무성향자라고도 부릅니다.<br>그들은 일반적이고 보통의 섹스를 즐깁니다.<br><br>누군가를 지배하거나 누군가에게 복종하지 않으며<br>서로를 배려하고 서로에게 만족감을<br>주기 위해서 노력합니다.	';}
+
+
+	if((Math.round(arrByID[0].count*8.333)) > 49){
+		document.getElementById('title').innerHTML = '당신은 '+arrByID[0].name+' 성향일지도 모릅니다.';
+	}
+	else{
+		document.getElementById('title').innerHTML = '당신의 성향은 매우 소프트한 것 같습니다.';
+		document.getElementById('script').innerHTML = '아마 당신은 성향자가 아닌,<br>평범한 사람일지도 모릅니다.<br>당신의 성향은 매우 소프트해서, <br>이 테스트로 어떠한 성향이다<br>특정짓기는 어렵습니다.<br>다시 한번 테스트를 진행해 주시면<br>다른 결과가 나올 수 도 있습니다.';
+	}
+
+	if((ver != 0.03) || (gender == false) || (age == false) || (sexual == false)){
+		alert('잘못된 접근입니다.');
+		document.getElementById('save_data').value = '';
+		window.location.href = "index.html";
+	}
+	else{
+		$("#black").hide();
+
+		$.ajax({
+
+			type : "POST" ,
+
+			async : true ,
+
+			url : "save.php",
+
+			dataType : "html" ,
+
+			timeout : 30000 ,
+
+			cache : false ,
+
+			data : $("#save_data").serialize() ,
+			error : function(request, status, error) {
+				//에러
+			} ,
+
+			success : function(response, status, request) {
+				//성공
+			} ,
+
+			beforeSend: function() {
+				//통신 시작
+			} ,
+
+			complete: function() {
+
+				//통신 완료
+
+			}
+
+		}).done(function(data) {
+
+		})
+	}
+
+});
+</script>
+<style>
+.percent{
+	width:100%;
+	height:21px;
+	z-index:1;
+}
+.graph{
+	position:relative;
+	top:10px;
+	margin-left:60px;
+	height:3px;
+	color: transparent;
+	overflow:hidden;
+	font-size:0;
+}
+#result{
+	font-size:14px;
+	width: calc(100% - 30px);
+	height:100px;
+	background-color:#2c3e50;
+	color:#fff;
+	padding:10px;
+	margin:15px;
+}
+.wrapper {
+	position: relative;
+	display: inline-block;
+	border: none;
+	font-size: 14px;
+	margin: 0px auto;
+}
+
+.wrapper input {
+	border: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	opacity: 0;
+}
+
+.wrapper label {
+	position: relative;
+	float: right;
+	color: #C8C8C8;
+}
+
+.wrapper label:before {
+	margin: 5px;
+	content: "\f005";
+	font-family: FontAwesome;
+	display: inline-block;
+	font-size: 1.5em;
+	color: #ccc;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.wrapper input:checked ~ label:before {
+	color: #FFC107;
+}
+
+.wrapper label:hover ~ label:before {
+	color: #ffdb70;
+}
+
+.wrapper label:hover:before {
+	color: #FFC107;
+	</style>
+	</body>
+	</html>
