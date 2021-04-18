@@ -1,0 +1,99 @@
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=460, initial-scale=0.82, user-scalable=no">
+<title>BDSM TEST</title>
+<link href="http://bdsm-test.info/css/style2.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script data-ad-client="ca-pub-1568162729922188" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body style="background:#2c3e50;">
+<div id="black" style="width:100%; height:100%; display:block; postion:fixed; z-index:1000; background:#2c3e50;"></div>
+<form style="width:460px; margin:0 auto;">
+<div style="font-size:25px;text-align:center;color:#95a5a6; text-shadow: 0px 1px 0px #7f8c8d; margin-top:15px; margin-bottom:20px;"><b>BDSM 성향 테스트</b></div>
+<div id="title" style="font-size:20px;text-align:center;color:#ecf0f1; text-shadow: 0px 1px 0px #bdc3c7;"></div>
+<br>
+<div class="q_box"><div id="script" style="font-size:14px;text-align:center;" class="question-text"></div></div>
+<div style="font-size:17px;text-align:center;color:#ecf0f1; text-shadow: 0px 1px 0px #bdc3c7;">자세한 성향 테스트를 진행할까요?</div>
+<br>
+<div id="button_area" style="text-align:center; margin:10px 0 20px 0;">
+</div>
+</form>
+<script type="text/javascript">
+	$(document).ready(function () {
+		function getParameterByName(name) {
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+				results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		var gender = getParameterByName('gender');
+		var age = getParameterByName('age');
+		var sexual = getParameterByName('sexual');
+		var result = getParameterByName('result');
+		var dom = getParameterByName('dom');
+		var sub = getParameterByName('sub');
+
+		if((gender == false) || (age == false) || (sexual == false)){
+			alert('잘못된 접근입니다.');
+			window.location.href = "index.html";
+		}
+		else{
+			$("#black").hide();
+		}
+
+		var point_dom = parseInt(dom, 10);
+		var point_sub = parseInt(sub, 10);
+
+		if(result == 'van')
+		{
+		document.getElementById('title').innerHTML = '당신의 성향은 매우 소프트한 것 같습니다.';
+		document.getElementById('script').innerHTML = '아마 당신은 성향자가 아닌,<br>평범한 사람인 것 같습니다..<br>당신은 일반적이고<br>보통의 섹스를 즐기는 성향은 아닌가요?<br><br>하지만 더 자세한 테스트로 <br>당신에게 숨겨진 성향을<br>알아 볼 수 있을지도 모릅니다.';
+		document.getElementById('button_area').innerHTML = '<button type="button" name="button" class="button" id="all_q" style="width:400px;">네, 자세한 질문을 받아보고 싶습니다.</button>';
+		}
+
+		if(result == 'sw')
+		{
+		document.getElementById('title').innerHTML = '당신은 지배적 성향과 피지배적 성향을<br> 동시에 가졌을지도 모릅니다.';
+		document.getElementById('script').innerHTML = '당신은은 항상 지배적인 역할을 원하지도<br>또는 항상 복종하는 역할을 원하지도 않는 성향은 아닌가요?.<br><br>당신은 상황이나 상대에 따라서<br>변화하는 성향을 가지고 있는것 같습니다.';
+		document.getElementById('button_area').innerHTML = '<button type="button" name="button" class="button" id="dom_q" style="width:400px;">지배적 성향에 대한 질문을 받아보고 싶습니다.</button><button type="button" name="button" class="button" id="sub_q" style="width:400px;">피지배적 성향에 대한 질문을 받아보고 싶습니다.</button><button type="button" name="button" class="button" id="all_q" style="width:400px;">모든 질문을 받아보고 싶습니다.</button>';
+		}
+
+		if(result == 'dom')
+		{
+		document.getElementById('title').innerHTML = '당신은 대체로 지배적인 성향을<br>가지고 있는것 같습니다.';
+		document.getElementById('script').innerHTML = '당신은 상대방을 통제할 수 있는<br>권한을 가지고 싶어 하지 않나요?<br>지배적 성향은 다양하게 분류되어 있습니다.<br>어쩌면 당신은 그중 한가지 성향을<br>가지고 있을지도 모릅니다.';
+		document.getElementById('button_area').innerHTML = '<button type="button" name="button" class="button" id="dom_q" style="width:400px;">지배적 성향에 대한 질문을 받아보고 싶습니다.</button><button type="button" name="button" class="button" id="all_q" style="width:400px;">모든 질문을 받아보고 싶습니다.</button>';
+		}
+
+		if(result == 'sub')
+		{
+		document.getElementById('title').innerHTML = '당신은 대체로 피지배적인 성향을<br>가지고 있는것 같습니다.';
+		document.getElementById('script').innerHTML = '당신은 상대방에게 본인을 통제할 수 있는<br>권한을 주고싶어하지 않나요?<br>피지배적 성향은 다양하게 분류되어 있습니다.<br>어쩌면 당신은 그중 한가지 성향을<br>가지고 있을지도 모릅니다.';
+		document.getElementById('button_area').innerHTML = '<button type="button" name="button" class="button" id="sub_q" style="width:400px;">피지배적 성향에 대한 질문만 받아보고 싶습니다.</button><button type="button" name="button" class="button" id="all_q" style="width:400px;">모든 질문을 받아보고 싶습니다.</button>';
+		}
+
+		if(result == 'dk')
+		{
+		document.getElementById('title').innerHTML = '당신의 성향은 아직 정확하게 파악 할 수 없습니다.';
+		document.getElementById('script').innerHTML = '당신의 성향을 정확하게 알기 위해서는<br>조금 더 자세한 테스트를 진행해야 합니다.<br><br>BDSM에는 매우 여러가지 종류의 성향이 존재합니다.<br>어쩌면 당신은 그중에 한가지 성향을<br>가지고 있을지도 모릅니다.';
+		document.getElementById('button_area').innerHTML = '<button type="button" name="button" class="button" id="all_q" style="width:400px;">네, 자세한 질문을 받아보고 싶습니다.</button>';
+		}
+
+		$('#all_q').click(function () {
+				window.location.href = "all_q.html?gender="+gender+"&age="+age+"&sexual="+sexual;
+		});
+
+		$('#dom_q').click(function () {
+				window.location.href = "dom_q.html?gender="+gender+"&age="+age+"&sexual="+sexual+"&sub="+point_sub;
+		});
+		$('#sub_q').click(function () {
+				window.location.href = "sub_q.html?gender="+gender+"&age="+age+"&sexual="+sexual+"&dom="+point_dom;
+		});
+	});
+</script>
+<div style="color:#fff; text-align:center; width:100%;">COPYRIGHT AT BDSM-TEST.INFO ALLRIGHT RESERVED.</div>
+<br>
+</body>
+</html>
